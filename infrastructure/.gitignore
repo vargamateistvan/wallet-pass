@@ -1,0 +1,23 @@
+# Terraform files
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Sensitive files
+*.tfvars
+!*.tfvars.example
+.terraformrc
+terraform.rc
+
+# Generated deployment scripts
+scripts/deploy-frontend.sh
+scripts/.env.production.example
+
+# Local files
+.DS_Store

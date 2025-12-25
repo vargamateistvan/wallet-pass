@@ -1668,6 +1668,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@codegenie/serverless-express", [\
+      ["npm:4.17.1", {\
+        "packageLocation": "../../.yarn/berry/cache/@codegenie-serverless-express-npm-4.17.1-911bc4dcd5-10c0.zip/node_modules/@codegenie/serverless-express/",\
+        "packageDependencies": [\
+          ["@codegenie/serverless-express", "npm:4.17.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@colors/colors", [\
       ["npm:1.6.0", {\
         "packageLocation": "../../.yarn/berry/cache/@colors-colors-npm-1.6.0-47f686c4e2-10c0.zip/node_modules/@colors/colors/",\
@@ -4537,6 +4546,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@vendia/serverless-express", [\
+      ["npm:4.12.6", {\
+        "packageLocation": "../../.yarn/berry/cache/@vendia-serverless-express-npm-4.12.6-15dc929652-10c0.zip/node_modules/@vendia/serverless-express/",\
+        "packageDependencies": [\
+          ["@codegenie/serverless-express", "npm:4.17.1"],\
+          ["@vendia/serverless-express", "npm:4.12.6"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@vitejs/plugin-react", [\
       ["npm:4.7.0", {\
         "packageLocation": "../../.yarn/berry/cache/@vitejs-plugin-react-npm-4.7.0-650e714693-10c0.zip/node_modules/@vitejs/plugin-react/",\
@@ -5212,6 +5231,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:20.19.27"],\
           ["@types/qrcode", "npm:1.5.6"],\
           ["@types/supertest", "npm:6.0.3"],\
+          ["@vendia/serverless-express", "npm:4.12.6"],\
           ["@wallet-pass/eslint-config", "workspace:packages/eslint-config"],\
           ["@wallet-pass/shared", "workspace:packages/shared"],\
           ["backend", "workspace:apps/backend"],\
