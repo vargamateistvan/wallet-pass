@@ -37,8 +37,9 @@ jobs:
         run: yarn workspace @wallet-pass/shared build
 
       - name: Build frontend
-        run: yarn workspace @wallet-pass/frontend build
+        run: yarn workspace frontend build
         env:
+          GITHUB_PAGES: "true"
           VITE_API_URL: ${{ secrets.VITE_API_URL || 'https://your-lambda-url.execute-api.us-east-1.amazonaws.com' }}
           VITE_PASS_TYPE_IDENTIFIER: ${{ secrets.VITE_PASS_TYPE_IDENTIFIER || 'pass.com.example.demo' }}
           VITE_TEAM_IDENTIFIER: ${{ secrets.VITE_TEAM_IDENTIFIER || 'DEMO123456' }}
