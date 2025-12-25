@@ -25,7 +25,7 @@ export const Templates: React.FC = () => {
     }
   };
 
-  const useTemplate = (template: PassTemplate) => {
+  const useTemplate = (_template: PassTemplate) => {
     // TODO: Load template into pass store
     navigate('/editor');
   };
