@@ -3,8 +3,8 @@
   "version": 2,
   "framework": "vite",
   "installCommand": "yarn install",
-  "buildCommand": "yarn workspace @wallet-pass/shared build && yarn workspace frontend build:vercel",
-  "outputDirectory": "apps/frontend/dist",
+  "buildCommand": "yarn workspace @wallet-pass/shared build && yarn workspace frontend build:vercel && cp -r apps/frontend/dist dist",
+  "outputDirectory": "dist",
   "rewrites": [
     {
       "source": "/(.*)",
