@@ -10,5 +10,10 @@
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ]
+  ],
+  "build": {
+    "env": {
+      "NODEJS_VERSION": "20"
+    }
+  }
 }
