@@ -1,9 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
-  "buildCommand": "START_DIR=$PWD; if [ \"$(basename \"$PWD\")\" = \"backend\" ]; then cd ../..; fi && npx turbo run build --filter=frontend --filter=@wallet-pass/shared && rm -rf \"$START_DIR/dist\" && mkdir -p \"$START_DIR/dist\" && cp -r apps/frontend/dist/* \"$START_DIR/dist/\"",
+  "buildCommand": "START_DIR=$PWD; if [ \"$(basename \"$PWD\")\" = \"backend\" ]; then cd ../..; fi && echo '--- DEBUG BUILD ---' && pwd && ls -F node_modules/ | grep react || echo 'react not found in root' && npx turbo run build --filter=frontend --filter=@wallet-pass/shared && rm -rf \"$START_DIR/dist\" && mkdir -p \"$START_DIR/dist\" && cp -r apps/frontend/dist/* \"$START_DIR/dist/\"",
   "outputDirectory": "dist",
-  "installCommand": "if [ \"$(basename \"$PWD\")\" = \"backend\" ]; then cd ../..; fi && npm install",
+  "installCommand": "if [ \"$(basename \"$PWD\")\" = \"backend\" ]; then cd ../..; fi && npm install && echo '--- DEBUG INSTALL ---' && pwd && ls -F node_modules/ | grep react || echo 'react not found in root'",
   "devCommand": "npm run dev",
   "framework": null,
   "rewrites": [
