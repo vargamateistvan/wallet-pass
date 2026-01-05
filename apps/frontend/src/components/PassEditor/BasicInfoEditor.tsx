@@ -6,7 +6,9 @@ export const BasicInfoEditor: React.FC = () => {
 
   return (
     <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-      <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Basic Information</h2>
+      <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
+        Basic Information
+      </h2>
       <div className="space-y-4">
         <div>
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
@@ -15,7 +17,9 @@ export const BasicInfoEditor: React.FC = () => {
           <input
             type="text"
             value={passData.organizationName || ''}
-            onChange={(e) => updatePassData({ organizationName: e.target.value })}
+            onChange={(e) =>
+              updatePassData({ organizationName: e.target.value })
+            }
             className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent"
             placeholder="e.g., Coffee Shop"
             required
@@ -29,7 +33,9 @@ export const BasicInfoEditor: React.FC = () => {
           <input
             type="text"
             value={passData.passTypeIdentifier || ''}
-            onChange={(e) => updatePassData({ passTypeIdentifier: e.target.value })}
+            onChange={(e) =>
+              updatePassData({ passTypeIdentifier: e.target.value })
+            }
             className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent"
             placeholder="pass.com.example.wallet"
             required
