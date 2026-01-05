@@ -3,7 +3,7 @@
   "version": 2,
   "buildCommand": "npx turbo run build --filter=frontend --filter=@wallet-pass/shared",
   "outputDirectory": "apps/frontend/dist",
-  "installCommand": "rm -rf node_modules package-lock.json && npm install && ls -F node_modules/",
+  "installCommand": "npm install && echo '--- DEBUG ---' && pwd && ls -la && ls -F node_modules/ || true",
   "devCommand": "npm run dev",
   "framework": null,
   "rewrites": [
