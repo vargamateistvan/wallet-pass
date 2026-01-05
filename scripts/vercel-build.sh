@@ -3,6 +3,12 @@ set -e
 
 echo "Running Vercel build script..."
 echo "Current directory: $(pwd)"
+echo "PATH: $PATH"
+
+if ! command -v yarn &> /dev/null; then
+    echo "yarn could not be found"
+    exit 127
+fi
 
 # Run turbo build
 echo "Executing: yarn turbo build:vercel --filter=frontend"
