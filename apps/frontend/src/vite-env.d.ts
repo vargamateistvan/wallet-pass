@@ -4,6 +4,7 @@ interface ImportMetaEnv {
   readonly VITE_API_URL: string;
   readonly VITE_PASS_TYPE_IDENTIFIER: string;
   readonly VITE_TEAM_IDENTIFIER: string;
+  readonly VITE_GITHUB_PAGES: string;
 }
 
 interface ImportMeta {

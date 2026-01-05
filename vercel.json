@@ -3,7 +3,7 @@
   "version": 2,
   "buildCommand": "npx turbo run build --filter=frontend --filter=@wallet-pass/shared",
   "outputDirectory": "apps/frontend/dist",
-  "installCommand": "NODE_ENV=development npm install",
+  "installCommand": "NODE_ENV=development npm ci && echo '--- DEBUG ---' && ls -d node_modules/react || echo 'Root react missing' && ls -d apps/frontend/node_modules/react || echo 'Frontend react missing'",
   "devCommand": "npm run dev",
   "framework": null,
   "rewrites": [
