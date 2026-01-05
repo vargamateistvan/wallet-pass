@@ -3,7 +3,6 @@
   "version": 2,
   "buildCommand": "yarn build",
   "outputDirectory": "apps/frontend/dist",
-  "installCommand": "corepack enable && corepack prepare yarn@4.7.0 --activate && yarn install",
   "devCommand": "yarn workspace frontend dev",
   "framework": "vite",
   "rewrites": [
