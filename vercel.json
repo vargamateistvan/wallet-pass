@@ -2,7 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
   "installCommand": "yarn install",
-  "buildCommand": "yarn workspace @wallet-pass/shared build && cd apps/frontend && yarn build:vercel",
+  "buildCommand": "cd packages/shared && yarn build && cd ../../apps/frontend && yarn build:vercel",
   "outputDirectory": "apps/frontend/dist",
   "rewrites": [
     {
