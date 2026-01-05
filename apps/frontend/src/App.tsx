@@ -20,7 +20,7 @@ function App() {
   }, [darkMode]);
 
   return (
-    <Router basename="/wallet-pass">
+    <Router basename={import.meta.env.VITE_GITHUB_PAGES === 'true' ? '/wallet-pass' : '/'}>
       <div className="relative">
         {/* Theme Toggle Button */}
         <button

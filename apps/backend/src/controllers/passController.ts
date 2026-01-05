@@ -7,7 +7,7 @@ export class PassController {
   // Create a new pass
   static async createPass(req: Request, res: Response): Promise<void> {
     try {
-      const { passType, passData, images }: CreatePassRequest = req.body;
+      const { passType: _passType, passData, images: _images }: CreatePassRequest = req.body;
 
       // Validate pass data
       const validation = PassValidator.validatePassData(passData);
@@ -150,7 +150,7 @@ export class PassController {
   // Delete pass
   static async deletePass(req: Request, res: Response): Promise<void> {
     try {
-      const { serialNumber } = req.params;
+      const { serialNumber: _serialNumber } = req.params;
 
       // TODO: Delete from database and S3
       res.json({

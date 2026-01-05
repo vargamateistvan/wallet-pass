@@ -2,11 +2,19 @@
 
 A full-stack monorepo application for creating and customizing Apple Wallet passes with QR codes, barcodes, and images.
 
+## 🚀 Deployment
+
+**Live Demo**: [https://wallet-pass.vercel.app](https://wallet-pass.vercel.app) *(or your-project.vercel.app)*
+
+This project is now deployed on **Vercel** for simplified deployment and hosting.
+
+See [VERCEL_DEPLOYMENT.md](VERCEL_DEPLOYMENT.md) for detailed deployment instructions.
+
 ## Tech Stack
 
 - **Frontend**: React + Vite + TypeScript + Tailwind CSS
-- **Backend**: Node.js + Express + TypeScript
-- **Infrastructure**: Terraform (AWS)
+- **Backend**: Node.js + Express + TypeScript (Serverless on Vercel)
+- **Infrastructure**: Vercel (previously AWS/Terraform)
 - **Monorepo**: Turborepo
 - **Package Manager**: Yarn v4
 - **Node Version**: 24.x LTS
