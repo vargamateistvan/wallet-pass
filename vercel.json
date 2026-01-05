@@ -3,7 +3,7 @@
   "version": 2,
   "framework": "vite",
   "installCommand": "npm install",
-  "buildCommand": "cd packages/shared && npm run build && cd ../../apps/frontend && npm run build",
+  "buildCommand": "npx turbo run build --filter=frontend",
   "outputDirectory": "apps/frontend/dist",
   "rewrites": [
     {
