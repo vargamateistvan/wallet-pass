@@ -14,7 +14,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "type-check": "turbo run type-check",
     "clean": "turbo run clean && rm -rf node_modules .turbo",
-    "vercel-build": "yarn build"
+    "vercel-build": "npm run build"
   },
   "devDependencies": {
     "eslint": "^8.55.0",
