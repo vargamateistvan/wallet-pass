@@ -2,8 +2,8 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
   "framework": "vite",
-  "installCommand": "npm install",
-  "buildCommand": "npm run build --workspace=@wallet-pass/shared && npm run build:vercel --workspace=frontend",
+  "installCommand": "yarn install",
+  "buildCommand": "yarn workspace @wallet-pass/shared build && yarn workspace frontend build:vercel",
   "outputDirectory": "apps/frontend/dist",
   "rewrites": [
     {
