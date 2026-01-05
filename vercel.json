@@ -3,8 +3,8 @@
   "version": 2,
   "framework": null,
   "installCommand": "yarn install",
-  "buildCommand": "yarn turbo build:vercel --filter=frontend",
-  "outputDirectory": "dist",
+  "buildCommand": "yarn turbo build:vercel --filter=frontend && echo 'Build complete. Checking output:' && ls -la apps/frontend/dist",
+  "outputDirectory": "apps/frontend/dist",
   "rewrites": [
     {
       "source": "/(.*)",
