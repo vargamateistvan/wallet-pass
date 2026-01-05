@@ -3,7 +3,7 @@
   "version": 2,
   "buildCommand": "npx turbo run build --filter=frontend --filter=@wallet-pass/shared",
   "outputDirectory": "apps/frontend/dist",
-  "installCommand": "npm install",
+  "installCommand": "npm install --include=dev",
   "devCommand": "npm run dev",
   "framework": null,
   "rewrites": [
