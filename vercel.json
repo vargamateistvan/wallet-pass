@@ -3,7 +3,7 @@
   "version": 2,
   "framework": null,
   "installCommand": "yarn install",
-  "buildCommand": "echo \"Current dir: $(pwd)\" && ls -la && npx turbo build --filter=@wallet-pass/shared && echo \"Changing dir to apps/frontend\" && cd apps/frontend && yarn build:vercel",
+  "buildCommand": "echo \"Current dir: $(pwd)\" && ls -la && npx turbo build --filter=@wallet-pass/shared && yarn workspace frontend build:vercel",
   "outputDirectory": "apps/frontend/dist",
   "rewrites": [
     {
