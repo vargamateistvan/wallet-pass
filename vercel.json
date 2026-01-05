@@ -3,7 +3,7 @@
   "version": 2,
   "framework": null,
   "installCommand": "yarn install",
-  "buildCommand": "node scripts/build.js",
+  "buildCommand": "if [ -f scripts/build.js ]; then node scripts/build.js; else cd ../.. && node scripts/build.js; fi",
   "outputDirectory": "dist",
   "rewrites": [
     {
