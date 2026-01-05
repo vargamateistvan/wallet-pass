@@ -3,7 +3,7 @@
   "version": 2,
   "framework": null,
   "installCommand": "yarn install",
-  "buildCommand": "if [ -f scripts/build.js ]; then node scripts/build.js; else cd ../.. && node scripts/build.js; fi",
+  "buildCommand": "ORIGINAL_DIR=$(pwd); if [ -f scripts/build.js ]; then node scripts/build.js; else cd ../.. && node scripts/build.js && echo \"Moving dist to $ORIGINAL_DIR\" && rm -rf \"$ORIGINAL_DIR/dist\" && mv dist \"$ORIGINAL_DIR/\"; fi",
   "outputDirectory": "dist",
   "rewrites": [
     {
