@@ -3,7 +3,7 @@
   "version": 2,
   "framework": "vite",
   "installCommand": "npm install",
-  "buildCommand": "cd packages/shared && npm run build && cd ../../apps/frontend && npm run build:vercel",
+  "buildCommand": "npm run build --workspace=@wallet-pass/shared && npm run build:vercel --workspace=frontend",
   "outputDirectory": "apps/frontend/dist",
   "rewrites": [
     {
