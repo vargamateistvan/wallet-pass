@@ -3,7 +3,7 @@
   "version": 2,
   "framework": null,
   "installCommand": "yarn install",
-  "buildCommand": "ls -la scripts && bash scripts/vercel-build.sh",
+  "buildCommand": "yarn turbo build:vercel --filter=frontend && if [ -d 'apps/frontend/dist' ]; then rm -rf dist && mv apps/frontend/dist dist; elif [ -d 'dist' ]; then echo 'dist found in root'; else echo 'Error: dist not found' && find . -name dist && exit 1; fi",
   "outputDirectory": "dist",
   "rewrites": [
     {
