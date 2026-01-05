@@ -16,7 +16,8 @@ yarn turbo build:vercel --filter=frontend
 
 echo "Build finished. Searching for built index.html..."
 # Find index.html that is inside a dist folder
-FOUND_INDEX=$(find . -type f -name "index.html" | grep "/dist/" | head -n 1)
+# Use || true to prevent script exit if grep finds nothing (due to set -e)
+FOUND_INDEX=$(find . -type f -name "index.html" | grep "/dist/" | head -n 1 || true)
 
 if [ -z "$FOUND_INDEX" ]; then
   echo "Error: Could not find index.html in any dist folder."
