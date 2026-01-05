@@ -20,7 +20,7 @@ function App() {
   }, [darkMode]);
 
   return (
-    <Router>
+    <Router basename="/wallet-pass">
       <div className="relative">
         {/* Theme Toggle Button */}
         <button
