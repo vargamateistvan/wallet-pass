@@ -3,8 +3,8 @@
   "version": 2,
   "framework": null,
   "installCommand": "yarn install",
-  "buildCommand": "echo \"Debug: Listing directories\" && ls -F && ls -F apps/ && ls -F apps/frontend/ && yarn turbo build:vercel --filter=frontend && echo \"Debug: Finding dist\" && find . -type d -name dist",
-  "outputDirectory": "apps/frontend/dist",
+  "buildCommand": "./scripts/vercel-build.sh",
+  "outputDirectory": "dist",
   "rewrites": [
     {
       "source": "/(.*)",
