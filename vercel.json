@@ -3,7 +3,7 @@
   "version": 2,
   "framework": null,
   "installCommand": "yarn install",
-  "buildCommand": "npx turbo build --filter=frontend... && ls -la apps/frontend/dist",
+  "buildCommand": "npx turbo build --filter=@wallet-pass/shared && cd apps/frontend && yarn build:vercel && ls -la dist",
   "outputDirectory": "apps/frontend/dist",
   "rewrites": [
     {
