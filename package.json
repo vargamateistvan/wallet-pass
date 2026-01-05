@@ -2,7 +2,6 @@
   "name": "wallet-pass-monorepo",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "yarn@4.7.0",
   "workspaces": [
     "apps/*",
     "packages/*"
