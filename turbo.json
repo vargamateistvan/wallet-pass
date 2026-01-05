@@ -7,6 +7,10 @@
       "outputs": ["dist/**", ".next/**", "build/**"],
       "env": ["VITE_API_URL", "DATABASE_URL", "AWS_REGION"]
     },
+    "build:vercel": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
     "dev": {
       "cache": false,
       "persistent": true

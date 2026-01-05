@@ -3,7 +3,7 @@
   "version": 2,
   "framework": null,
   "installCommand": "yarn install",
-  "buildCommand": "rm -rf dist && yarn build --filter=@wallet-pass/shared && yarn workspace frontend build:vercel && mv apps/frontend/dist dist",
+  "buildCommand": "yarn turbo build:vercel --filter=frontend && mv apps/frontend/dist dist",
   "outputDirectory": "dist",
   "rewrites": [
     {
