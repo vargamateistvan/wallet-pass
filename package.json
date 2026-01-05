@@ -2,7 +2,7 @@
   "name": "wallet-pass-monorepo",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "yarn@4.1.0",
+  "packageManager": "yarn@1.22.19",
   "workspaces": [
     "apps/*",
     "packages/*"
@@ -24,6 +24,6 @@
     "typescript": "^5.3.3"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": "20.x"
   }
 }
