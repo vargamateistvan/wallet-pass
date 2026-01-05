@@ -3,23 +3,12 @@
   "version": 2,
   "framework": "vite",
   "installCommand": "npm install",
-  "buildCommand": "npx turbo run build --filter=frontend --filter=@wallet-pass/shared",
+  "buildCommand": "npm run build",
   "outputDirectory": "apps/frontend/dist",
-  "devCommand": "npm run dev",
   "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api"
-    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ],
-  "functions": {
-    "api/**/*.ts": {
-      "runtime": "nodejs20.x",
-      "includeFiles": "apps/backend/src/**"
-    }
-  }
+  ]
 }
