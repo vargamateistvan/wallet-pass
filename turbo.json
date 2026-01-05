@@ -9,7 +9,7 @@
     },
     "build:vercel": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**"]
+      "outputs": ["../../dist/**"]
     },
     "dev": {
       "cache": false,

@@ -3,7 +3,7 @@
   "version": 2,
   "framework": null,
   "installCommand": "yarn install",
-  "buildCommand": "yarn turbo build:vercel --filter=frontend && mv apps/frontend/dist dist",
+  "buildCommand": "yarn turbo build:vercel --filter=frontend",
   "outputDirectory": "dist",
   "rewrites": [
     {
